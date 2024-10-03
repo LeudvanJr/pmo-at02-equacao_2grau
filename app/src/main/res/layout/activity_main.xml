@@ -10,41 +10,99 @@
     <EditText
         android:id="@+id/et3Termo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/termo3"
-        android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/et2Termo"
-        tools:layout_editor_absoluteX="100dp" />
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/et2Termo"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et1Termo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="304dp"
         android:ems="10"
         android:hint="@string/termo1"
-        android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="163dp" />
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:singleLine="false"
+        android:textColorHint="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/tvResposta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et2Termo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="@string/termo2"
-        android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/et1Termo"
-        tools:layout_editor_absoluteX="100dp" />
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textColorHint="@color/gray"
+        app:layout_constraintStart_toStartOf="@+id/et1Termo"
+        app:layout_constraintTop_toBottomOf="@+id/et1Termo" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAutor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="16dp"
         android:text="@string/autor"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="15dp" />
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/ra"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btnTexto"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tvResposta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et3Termo" />
+
+    <TextView
+        android:id="@+id/tvResposta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvResposta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et1Termo" />
+
+    <TextView
+        android:id="@+id/tvResposta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="163dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResposta1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

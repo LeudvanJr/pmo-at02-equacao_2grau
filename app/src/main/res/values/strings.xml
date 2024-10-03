@@ -5,4 +5,9 @@
     <string name="termo1">1 Termo (a)</string>
     <string name="termo2">2º Termo (b)</string>
     <string name="termo3">3º Termo (c)</string>
+    <string name="btnTexto">Calcular</string>
+    <string name="semRaizReal">Não existe raíz real =(</string>
+    <string name="umaRaizReal">X =</string>
+    <string name="primeiraRaiz">X¹ =</string>
+    <string name="segundaRaiz">X² =</string>
 </resources>
